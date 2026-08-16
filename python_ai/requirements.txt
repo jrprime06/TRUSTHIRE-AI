@@ -1,0 +1,14 @@
+Flask
+google-generativeai
+PyMuPDF
+mysql-connector-python
+python-dotenv
+fastapi
+uvicorn
+pydantic
+python-multipart
+spacy
+sentence-transformers
+scikit-learn
+numpy
+shap
