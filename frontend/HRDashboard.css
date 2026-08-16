@@ -1,0 +1,891 @@
+/* =====================================================
+   MAIN DASHBOARD
+===================================================== */
+
+.hr-dashboard {
+  min-height: 100vh !important;
+  background: #f5f7fb !important;
+  font-family: "Poppins", Arial, sans-serif !important;
+  color: #ffffff !important;
+}
+
+
+/* =====================================================
+   TOP NAVIGATION
+===================================================== */
+
+.hr-top-nav {
+  width: 100% !important;
+  height: 82px !important;
+  background: #ffffff !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  padding: 0 42px !important;
+
+  box-sizing: border-box !important;
+
+  border-bottom: 1px solid #eeeeee !important;
+
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  
+}
+
+
+/* Logo */
+
+.hr-logo {
+  display: flex !important;
+  align-items: center !important;
+  min-width: 190px !important;
+}
+
+.hr-brand-logo {
+  width: 150px !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+
+/* Navigation */
+
+.hr-nav-links {
+  flex: 1 !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  gap: 34px !important;
+}
+
+.hr-nav-links a {
+  color: #202020 !important;
+  text-decoration: none !important;
+
+  font-size: 15px !important;
+  font-weight: 500 !important;
+
+  transition: 0.25s ease !important;
+
+  position: relative !important;
+}
+
+.hr-nav-links a:hover {
+  color: #2858e8 !important;
+}
+
+
+
+
+/* Logout */
+
+.hr-nav-links .hr-logout-link {
+  color: #d93636 !important;
+}
+
+.hr-nav-links .hr-logout-link:hover {
+  color: #b51f1f !important;
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.hr-profile {
+  min-width: 190px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+
+  gap: 11px !important;
+}
+
+.hr-avatar {
+  width: 42px !important;
+  height: 42px !important;
+
+  border-radius: 50% !important;
+
+  background: linear-gradient(
+    135deg,
+    #2858e8,
+    #493ce8
+  ) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #ffffff !important;
+
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.hr-profile-info {
+  display: flex !important;
+  flex-direction: column !important;
+
+  line-height: 1.3 !important;
+}
+
+.hr-name {
+  color: #222222 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.hr-username {
+  color: #777777 !important;
+  font-size: 12px !important;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.hr-main-content {
+  width: 100% !important;
+  max-width: 1720px !important;
+
+  margin: 0 auto !important;
+
+  padding: 34px 42px 70px !important;
+
+  box-sizing: border-box !important;
+  margin-top: 110px !important;
+}
+
+
+/* =====================================================
+   WELCOME CARD
+===================================================== */
+
+.hr-welcome-card {
+  width: 100% !important;
+
+  min-height: 475px !important;
+
+  border-radius: 30px !important;
+
+  background: linear-gradient(
+    115deg,
+    #020d2e 0%,
+    #080d5d 45%,
+    #100b78 100%
+  ) !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  position: relative !important;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box !important;
+
+  padding: 65px 48px 65px 50px !important;
+}
+
+
+/* Left content */
+
+.hr-welcome-content {
+  width: 60% !important;
+
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.hr-welcome-content h1 {
+  margin: 0 0 22px !important;
+
+  font-size: 48px !important;
+  line-height: 1.1 !important;
+
+  font-weight: 800 !important;
+
+  color: #ffffff !important;
+}
+
+.hr-wave {
+  margin-left: 12px !important;
+  font-size: 44px !important;
+}
+
+.hr-welcome-content h2 {
+  margin: 0 0 36px !important;
+
+  font-size: 31px !important;
+
+  font-weight: 700 !important;
+
+  color: #ffffff !important;
+}
+
+.hr-welcome-content p {
+  max-width: 680px !important;
+
+  margin: 0 0 32px !important;
+
+  font-size: 19px !important;
+
+  line-height: 1.85 !important;
+
+  font-weight: 400 !important;
+
+  color: #ffffff !important;
+}
+
+
+/* Application button */
+
+.hr-primary-button {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-width: 270px !important;
+  height: 68px !important;
+
+  padding: 0 35px !important;
+
+  border-radius: 40px !important;
+
+  background: #ffffff !important;
+
+  color: #2861e9 !important;
+
+  text-decoration: none !important;
+
+  font-size: 17px !important;
+  font-weight: 700 !important;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease !important;
+}
+
+.hr-primary-button:hover {
+  transform: translateY(-3px) !important;
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.22) !important;
+}
+
+
+/* =====================================================
+   RIGHT PROFILE ILLUSTRATION
+===================================================== */
+
+.hr-welcome-image {
+  width: 40% !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+/* Circle */
+
+.hr-profile-circle {
+  width: 250px !important;
+  height: 250px !important;
+
+  border-radius: 50% !important;
+
+  background: #c7ddff !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: relative !important;
+
+  overflow: hidden !important;
+
+  box-shadow:
+    inset -25px -15px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+
+/* Person */
+
+.hr-person {
+  width: 160px !important;
+  height: 210px !important;
+
+  position: relative !important;
+
+  margin-top: 42px !important;
+}
+
+
+/* Hair */
+
+.hr-hair {
+  width: 84px !important;
+  height: 63px !important;
+
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 38px !important;
+
+  background: #315b73 !important;
+
+  border-radius:
+    38px 38px 18px 18px !important;
+
+  z-index: 3 !important;
+}
+
+
+/* Face */
+
+.hr-face {
+  width: 72px !important;
+  height: 82px !important;
+
+  position: absolute !important;
+
+  top: 30px !important;
+  left: 44px !important;
+
+  background: #ffe0cf !important;
+
+  border-radius:
+    35px 35px 32px 32px !important;
+
+  z-index: 2 !important;
+}
+
+
+/* Body */
+
+.hr-body {
+  position: absolute !important;
+
+  width: 155px !important;
+  height: 120px !important;
+
+  left: 2px !important;
+  top: 100px !important;
+
+  background: #447da2 !important;
+
+  border-radius:
+    45px 45px 0 0 !important;
+
+  z-index: 1 !important;
+}
+
+
+/* Shirt */
+
+.hr-shirt {
+  position: absolute !important;
+
+  left: 45px !important;
+  top: 0 !important;
+
+  width: 66px !important;
+  height: 90px !important;
+
+  background: #f2f2f2 !important;
+
+  clip-path: polygon(
+    20% 0,
+    80% 0,
+    100% 100%,
+    0 100%
+  ) !important;
+}
+
+
+/* Tie */
+
+.hr-tie {
+  position: absolute !important;
+
+  top: 8px !important;
+  left: 69px !important;
+
+  width: 17px !important;
+  height: 76px !important;
+
+  background: #e74d55 !important;
+
+  clip-path: polygon(
+    35% 0,
+    65% 0,
+    100% 25%,
+    70% 100%,
+    30% 100%,
+    0 25%
+  ) !important;
+}
+
+
+/* =====================================================
+   CAREER SECTION
+===================================================== */
+
+.hr-career-section {
+  margin-top: 38px !important;
+
+  width: 100% !important;
+}
+
+
+/* Career outer card */
+
+.hr-career-card {
+  width: 100% !important;
+
+  min-height: 480px !important;
+
+  position: relative !important;
+
+  overflow: hidden !important;
+
+  border-radius: 30px !important;
+
+  background: #020c35 !important;
+
+  padding: 92px 80px !important;
+
+  box-sizing: border-box !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+}
+
+
+/* Main gradient panel */
+
+.hr-career-card::before {
+  content: "" !important;
+
+  position: absolute !important;
+
+  left: 80px !important;
+  right: 80px !important;
+
+  top: 92px !important;
+  bottom: 92px !important;
+
+  border-radius: 30px !important;
+
+  background: linear-gradient(
+    110deg,
+    #2865ec,
+    #5047e9
+  ) !important;
+
+  z-index: 0 !important;
+}
+
+
+/* Decorative top circle */
+
+.hr-decoration-top {
+  position: absolute !important;
+
+  width: 330px !important;
+  height: 330px !important;
+
+  right: -70px !important;
+  top: -130px !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(91, 82, 221, 0.35) !important;
+
+  z-index: 1 !important;
+}
+
+
+/* Decorative bottom circle */
+
+.hr-decoration-bottom {
+  position: absolute !important;
+
+  width: 260px !important;
+  height: 260px !important;
+
+  left: -100px !important;
+  bottom: -135px !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(63, 77, 173, 0.22) !important;
+
+  z-index: 1 !important;
+}
+
+
+/* Career text */
+
+.hr-career-content {
+  width: 70% !important;
+
+  text-align: center !important;
+
+  position: relative !important;
+
+  z-index: 3 !important;
+}
+
+.hr-career-content h2 {
+  margin: 0 0 26px !important;
+
+  color: #ffffff !important;
+
+  font-size: 42px !important;
+
+  line-height: 1.35 !important;
+
+  font-weight: 800 !important;
+}
+
+.hr-career-content p {
+  max-width: 850px !important;
+
+  margin: 0 auto 38px !important;
+
+  color: #ffffff !important;
+
+  font-size: 18px !important;
+
+  line-height: 1.75 !important;
+}
+
+
+/* Explore button */
+
+.hr-career-button {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-width: 190px !important;
+
+  height: 62px !important;
+
+  padding: 0 35px !important;
+
+  border-radius: 40px !important;
+
+  background: #ffffff !important;
+
+  color: #2861e9 !important;
+
+  text-decoration: none !important;
+
+  font-size: 17px !important;
+
+  font-weight: 700 !important;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease !important;
+}
+
+.hr-career-button:hover {
+  transform: translateY(-3px) !important;
+
+  box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+/* =====================================================
+   TRUST SCORE CIRCLE
+===================================================== */
+
+.hr-trust-score-circle {
+  position: absolute !important;
+
+  right: 135px !important;
+
+  top: 50% !important;
+
+  transform: translateY(-50%) !important;
+
+  width: 180px !important;
+  height: 180px !important;
+
+  border-radius: 50% !important;
+
+  background: rgba(129, 130, 241, 0.42) !important;
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+
+  z-index: 3 !important;
+}
+
+.hr-trust-score-circle strong {
+  color: #ffffff !important;
+
+  font-size: 50px !important;
+
+  line-height: 1 !important;
+
+  font-weight: 800 !important;
+}
+
+.hr-trust-score-circle span {
+  margin-top: 17px !important;
+
+  color: #ffffff !important;
+
+  font-size: 16px !important;
+
+  font-weight: 500 !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .hr-nav-links {
+    gap: 20px !important;
+  }
+
+  .hr-welcome-content {
+    width: 65% !important;
+  }
+
+  .hr-welcome-image {
+    width: 35% !important;
+  }
+
+  .hr-career-card {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+
+  .hr-career-card::before {
+    left: 45px !important;
+    right: 45px !important;
+  }
+
+  .hr-trust-score-circle {
+    right: 75px !important;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .hr-top-nav {
+    height: auto !important;
+
+    padding: 18px 25px !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 15px !important;
+  }
+
+  .hr-logo {
+    min-width: auto !important;
+  }
+
+  .hr-nav-links {
+    order: 3 !important;
+
+    width: 100% !important;
+
+    justify-content: center !important;
+
+    flex-wrap: wrap !important;
+  }
+
+  .hr-profile {
+    margin-left: auto !important;
+
+    min-width: auto !important;
+  }
+
+  .hr-main-content {
+    padding: 25px !important;
+  }
+
+  .hr-welcome-card {
+    min-height: auto !important;
+
+    padding: 50px 40px !important;
+  }
+
+  .hr-welcome-content {
+    width: 100% !important;
+  }
+
+  .hr-welcome-content h1 {
+    font-size: 40px !important;
+  }
+
+  .hr-welcome-content p {
+    font-size: 17px !important;
+  }
+
+  .hr-welcome-image {
+    display: none !important;
+  }
+
+  .hr-career-card {
+    min-height: 550px !important;
+
+    padding: 80px 40px !important;
+  }
+
+  .hr-career-card::before {
+    top: 80px !important;
+    bottom: 80px !important;
+
+    left: 40px !important;
+    right: 40px !important;
+  }
+
+  .hr-career-content {
+    width: 100% !important;
+  }
+
+  .hr-career-content h2 {
+    font-size: 34px !important;
+  }
+
+  .hr-career-content p {
+    font-size: 16px !important;
+  }
+
+  .hr-trust-score-circle {
+    width: 145px !important;
+    height: 145px !important;
+
+    right: 50% !important;
+
+    top: auto !important;
+    bottom: 20px !important;
+
+    transform: translateX(50%) !important;
+  }
+
+  .hr-trust-score-circle strong {
+    font-size: 38px !important;
+  }
+
+  .hr-trust-score-circle span {
+    font-size: 13px !important;
+    margin-top: 8px !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .hr-top-nav {
+    padding: 15px !important;
+  }
+
+  .hr-nav-links {
+    gap: 15px !important;
+  }
+
+  .hr-nav-links a {
+    font-size: 13px !important;
+  }
+
+  .hr-profile-info {
+    display: none !important;
+  }
+
+  .hr-main-content {
+    padding: 18px !important;
+  }
+
+  .hr-welcome-card {
+    border-radius: 22px !important;
+
+    padding: 40px 25px !important;
+  }
+
+  .hr-welcome-content h1 {
+    font-size: 34px !important;
+  }
+
+  .hr-welcome-content h2 {
+    font-size: 25px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .hr-welcome-content p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  .hr-primary-button {
+    width: 100% !important;
+    min-width: auto !important;
+  }
+
+  .hr-career-card {
+    border-radius: 22px !important;
+
+    min-height: 590px !important;
+
+    padding: 65px 25px !important;
+  }
+
+  .hr-career-card::before {
+    left: 20px !important;
+    right: 20px !important;
+
+    top: 65px !important;
+    bottom: 65px !important;
+
+    border-radius: 22px !important;
+  }
+
+  .hr-career-content h2 {
+    font-size: 28px !important;
+  }
+
+  .hr-career-content p {
+    font-size: 14px !important;
+  }
+
+  .hr-career-button {
+    width: 100% !important;
+  }
+}

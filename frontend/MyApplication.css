@@ -1,0 +1,2219 @@
+/* =========================================================
+   MY APPLICATIONS - TRUSTHIRE AI
+========================================================= */
+
+* {
+    box-sizing: border-box !important;
+}
+
+.myApplicationPage {
+    min-height: 100vh !important;
+    background: #f5f8fc !important;
+    color: #172033 !important;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif !important;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.myApplicationNavbar {
+    height: 76px !important;
+
+    background: rgba(255, 255, 255, 0.96) !important;
+
+    border-bottom: 1px solid #e5eaf1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 6% !important;
+
+    position: sticky !important;
+    top: 0 !important;
+
+    z-index: 1000 !important;
+
+    backdrop-filter: blur(14px) !important;
+
+    box-shadow:
+        0 2px 15px rgba(15, 23, 42, 0.04) !important;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.myApplicationLogo {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 11px !important;
+
+    cursor: pointer !important;
+
+    min-width: 230px !important;
+}
+
+
+.logoMark {
+    width: 42px !important;
+    height: 42px !important;
+
+    border-radius: 12px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        ) !important;
+
+    color: white !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 20px !important;
+
+    font-weight: 800 !important;
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.25) !important;
+}
+
+
+.myApplicationLogo h2 {
+    margin: 0 !important;
+
+    font-size: 21px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: -0.5px !important;
+
+    color: #172033 !important;
+}
+
+
+.myApplicationLogo h2 span {
+    color: #2563eb !important;
+}
+
+
+.myApplicationLogo small {
+    display: block !important;
+
+    margin-top: 2px !important;
+
+    color: #8a95a6 !important;
+
+    font-size: 9px !important;
+
+    letter-spacing: 0.4px !important;
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.myApplicationNavLinks {
+    flex: 1 !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    gap: 5px !important;
+}
+
+
+.myApplicationNavLinks button {
+    border: none !important;
+
+    background: transparent !important;
+
+    color: #657189 !important;
+
+    padding: 10px 17px !important;
+
+    border-radius: 9px !important;
+
+    font-size: 14px !important;
+
+    font-weight: 500 !important;
+
+    cursor: pointer !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+.myApplicationNavLinks button:hover {
+    color: #2563eb !important;
+
+    background: #eff6ff !important;
+}
+
+
+.myApplicationNavLinks button.active {
+    color: #2563eb !important;
+
+    background: #eff6ff !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   NAVBAR BACK BUTTON
+========================================================= */
+
+.navbarBackButton {
+    border: 1px solid #dce4ee !important;
+
+    background: white !important;
+
+    color: #526078 !important;
+
+    padding: 9px 15px !important;
+
+    border-radius: 9px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 7px !important;
+
+    cursor: pointer !important;
+
+    font-size: 13px !important;
+
+    transition: 0.2s !important;
+}
+
+
+.navbarBackButton:hover {
+    border-color: #bfdbfe !important;
+
+    background: #eff6ff !important;
+
+    color: #2563eb !important;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.myApplicationHero {
+    min-height: 260px !important;
+
+    padding: 55px 8% !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    gap: 30px !important;
+
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(56, 189, 248, 0.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eff6ff 0%,
+            #ffffff 60%,
+            #f8fbff 100%
+        ) !important;
+
+    border-bottom: 1px solid #e5edf7 !important;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.heroContent {
+    max-width: 720px !important;
+}
+
+
+.heroBadge {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    padding: 8px 14px !important;
+
+    border-radius: 30px !important;
+
+    background: #dbeafe !important;
+
+    color: #2563eb !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.2px !important;
+}
+
+
+.heroContent h1 {
+    margin: 15px 0 10px !important;
+
+    font-size: 42px !important;
+
+    line-height: 1.1 !important;
+
+    letter-spacing: -1.3px !important;
+
+    color: #97b6f3 !important;
+}
+
+
+.heroContent p {
+    margin: 0 !important;
+
+    max-width: 620px !important;
+
+    color: #68758a !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   APPLICATION COUNTER
+========================================================= */
+
+.applicationCounter {
+    min-width: 180px !important;
+
+    height: 115px !important;
+
+    padding: 20px !important;
+
+    border-radius: 18px !important;
+
+    background: rgba(255, 255, 255, 0.85) !important;
+
+    border: 1px solid #dce7f4 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 14px !important;
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.08) !important;
+
+    backdrop-filter: blur(10px) !important;
+}
+
+
+.counterNumber {
+    font-size: 42px !important;
+
+    font-weight: 800 !important;
+
+    color: #2563eb !important;
+
+    line-height: 1 !important;
+}
+
+
+.counterText {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 3px !important;
+}
+
+
+.counterText span {
+    color: #8994a7 !important;
+
+    font-size: 11px !important;
+
+    text-transform: uppercase !important;
+
+    letter-spacing: 0.8px !important;
+}
+
+
+.counterText strong {
+    color: #263248 !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.myApplicationContent {
+    max-width: 1120px !important;
+
+    margin: 0 auto !important;
+
+    padding: 42px 22px 70px !important;
+}
+
+
+/* =========================================================
+   APPLICATION LIST
+========================================================= */
+
+.applicationList {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 24px !important;
+}
+
+
+/* =========================================================
+   APPLICATION CARD
+========================================================= */
+
+.applicationCard {
+    background: #ffffff !important;
+
+    border: 1px solid #e3e9f1 !important;
+
+    border-radius: 18px !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        0 7px 25px rgba(15, 23, 42, 0.045) !important;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease !important;
+}
+
+
+.applicationCard:hover {
+    transform: translateY(-2px) !important;
+
+    border-color: #d5e1ef !important;
+
+    box-shadow:
+        0 15px 38px rgba(15, 23, 42, 0.08) !important;
+}
+
+
+/* =========================================================
+   APPLICATION TOP
+========================================================= */
+
+.applicationCardTop {
+    min-height: 100px !important;
+
+    padding: 23px 27px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    gap: 20px !important;
+
+    border-bottom: 1px solid #edf1f6 !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #fbfdff
+        ) !important;
+}
+
+
+/* =========================================================
+   JOB INFORMATION
+========================================================= */
+
+.applicationJobInfo {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 15px !important;
+}
+
+
+.applicationJobIcon {
+    width: 52px !important;
+    height: 52px !important;
+
+    flex-shrink: 0 !important;
+
+    border-radius: 13px !important;
+
+    background: #eff6ff !important;
+
+    color: #2563eb !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-size: 20px !important;
+
+    border: 1px solid #dbeafe !important;
+}
+
+
+.applicationNumber {
+    display: block !important;
+
+    margin-bottom: 4px !important;
+
+    color: #8b96a8 !important;
+
+    font-size: 10px !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.7px !important;
+
+    text-transform: uppercase !important;
+}
+
+
+.applicationJobInfo h2 {
+    margin: 0 !important;
+
+    color: #202b3f !important;
+
+    font-size: 18px !important;
+
+    font-weight: 750 !important;
+}
+
+
+.applicationJobInfo p {
+    margin: 4px 0 0 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 6px !important;
+
+    color: #788499 !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.applicationStatus {
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    gap: 7px !important;
+
+    padding: 8px 13px !important;
+
+    border-radius: 30px !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+}
+
+
+.status-uploaded {
+    background: #eff6ff !important;
+
+    color: #2563eb !important;
+
+    border: 1px solid #dbeafe !important;
+}
+
+
+.status-success {
+    background: #ecfdf5 !important;
+
+    color: #059669 !important;
+
+    border: 1px solid #a7f3d0 !important;
+}
+
+
+.status-danger {
+    background: #fef2f2 !important;
+
+    color: #dc2626 !important;
+
+    border: 1px solid #fecaca !important;
+}
+
+
+/* =========================================================
+   APPLICATION DETAILS
+========================================================= */
+
+.applicationDetails {
+    padding: 27px !important;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.sectionTitle {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 9px !important;
+
+    margin-bottom: 17px !important;
+}
+
+
+.sectionTitle svg {
+    color: #2563eb !important;
+
+    font-size: 15px !important;
+}
+
+
+.sectionTitle h3 {
+    margin: 0 !important;
+
+    color: #263248 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 750 !important;
+}
+
+
+/* =========================================================
+   DETAILS GRID
+========================================================= */
+
+.detailsGrid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 13px !important;
+
+    margin-bottom: 23px !important;
+}
+
+
+/* =========================================================
+   DETAIL BOX
+========================================================= */
+
+.detailBox {
+    min-height: 72px !important;
+
+    padding: 13px 15px !important;
+
+    background: #f8fafc !important;
+
+    border: 1px solid #edf1f5 !important;
+
+    border-radius: 10px !important;
+
+    transition: 0.2s !important;
+}
+
+
+.detailBox:hover {
+    background: #f4f8fd !important;
+
+    border-color: #dbe5f0 !important;
+}
+
+
+.detailBox span {
+    display: block !important;
+
+    margin-bottom: 7px !important;
+
+    color: #8994a7 !important;
+
+    font-size: 10px !important;
+
+    font-weight: 700 !important;
+
+    text-transform: uppercase !important;
+
+    letter-spacing: 0.5px !important;
+}
+
+
+.detailBox strong {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 7px !important;
+
+    color: #29354a !important;
+
+    font-size: 13px !important;
+
+    font-weight: 600 !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+
+.detailBox strong svg {
+    flex-shrink: 0 !important;
+
+    color: #6b8fc7 !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   RESUME SECTION
+========================================================= */
+
+.resumeSection {
+    min-height: 78px !important;
+
+    padding: 14px 15px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 13px !important;
+
+    border: 1px solid #dfe7f1 !important;
+
+    border-radius: 12px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbfdff,
+            #f7faff
+        ) !important;
+
+    margin-bottom: 18px !important;
+}
+
+
+/* =========================================================
+   RESUME ICON
+========================================================= */
+
+.resumeFileIcon {
+    width: 45px !important;
+    height: 45px !important;
+
+    flex-shrink: 0 !important;
+
+    border-radius: 10px !important;
+
+    background: #fee2e2 !important;
+
+    color: #dc2626 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-size: 18px !important;
+
+    border: 1px solid #fecaca !important;
+}
+
+
+/* =========================================================
+   RESUME INFO
+========================================================= */
+
+.resumeFileInfo {
+    flex: 1 !important;
+
+    min-width: 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 3px !important;
+}
+
+
+.resumeFileInfo span {
+    color: #8a95a6 !important;
+
+    font-size: 10px !important;
+
+    text-transform: uppercase !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.5px !important;
+}
+
+
+.resumeFileInfo strong {
+    color: #263248 !important;
+
+    font-size: 13px !important;
+
+    overflow: hidden !important;
+
+    text-overflow: ellipsis !important;
+
+    white-space: nowrap !important;
+}
+
+
+.resumeFileInfo small {
+    color: #8a95a6 !important;
+
+    font-size: 11px !important;
+}
+
+
+/* =========================================================
+   VIEW RESUME BUTTON
+========================================================= */
+
+.viewResumeButton {
+    flex-shrink: 0 !important;
+
+    border: 1px solid #bfdbfe !important;
+
+    background: #eff6ff !important;
+
+    color: #2563eb !important;
+
+    padding: 9px 14px !important;
+
+    border-radius: 8px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 7px !important;
+
+    cursor: pointer !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+.viewResumeButton:hover {
+    background: #dbeafe !important;
+
+    border-color: #93c5fd !important;
+
+    transform: translateY(-1px) !important;
+}
+
+
+/* =========================================================
+   INTERVIEW HEADER
+========================================================= */
+
+.interviewHeader {
+    width: 100% !important;
+
+    min-height: 67px !important;
+
+    padding: 11px 15px !important;
+
+    border: 1px solid #dce5ef !important;
+
+    background: #f8fafc !important;
+
+    border-radius: 11px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    cursor: pointer !important;
+
+    text-align: left !important;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+
+.interviewHeader:hover {
+    background: #f0f7ff !important;
+
+    border-color: #bfdbfe !important;
+}
+
+
+.interviewHeader.expanded {
+    background: #eff6ff !important;
+
+    border-color: #bfdbfe !important;
+
+    border-bottom-left-radius: 0 !important;
+
+    border-bottom-right-radius: 0 !important;
+}
+
+
+/* =========================================================
+   INTERVIEW TITLE
+========================================================= */
+
+.interviewTitle {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 12px !important;
+}
+
+
+.interviewIcon {
+    width: 40px !important;
+    height: 40px !important;
+
+    flex-shrink: 0 !important;
+
+    border-radius: 9px !important;
+
+    background: #dbeafe !important;
+
+    color: #2563eb !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-size: 16px !important;
+}
+
+
+.interviewTitle strong {
+    display: block !important;
+
+    color: #263248 !important;
+
+    font-size: 13px !important;
+
+    font-weight: 750 !important;
+}
+
+
+.interviewTitle span {
+    display: block !important;
+
+    margin-top: 3px !important;
+
+    color: #8994a7 !important;
+
+    font-size: 11px !important;
+}
+
+
+/* =========================================================
+   EXPAND ICON
+========================================================= */
+
+.expandIcon {
+    width: 32px !important;
+    height: 32px !important;
+
+    border-radius: 8px !important;
+
+    background: white !important;
+
+    border: 1px solid #dbe4ef !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    color: #5f718b !important;
+
+    font-size: 11px !important;
+}
+
+
+/* =========================================================
+   QUESTIONS CONTAINER
+========================================================= */
+
+.questionsContainer {
+    padding: 18px !important;
+
+    background: #fbfdff !important;
+
+    border: 1px solid #bfdbfe !important;
+
+    border-top: none !important;
+
+    border-bottom-left-radius: 11px !important;
+
+    border-bottom-right-radius: 11px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 14px !important;
+}
+
+
+/* =========================================================
+   QUESTION CARD
+========================================================= */
+
+.questionCard {
+    display: flex !important;
+
+    gap: 14px !important;
+
+    padding: 17px !important;
+
+    background: white !important;
+
+    border: 1px solid #e5ebf2 !important;
+
+    border-radius: 11px !important;
+
+    transition: 0.2s !important;
+}
+
+
+.questionCard:hover {
+    border-color: #d5e2ef !important;
+
+    box-shadow:
+        0 5px 15px rgba(15, 23, 42, 0.035) !important;
+}
+
+
+/* =========================================================
+   QUESTION NUMBER
+========================================================= */
+
+.questionNumber {
+    width: 39px !important;
+    height: 39px !important;
+
+    flex-shrink: 0 !important;
+
+    border-radius: 9px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        ) !important;
+
+    color: white !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-size: 12px !important;
+
+    font-weight: 800 !important;
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.18) !important;
+}
+
+
+/* =========================================================
+   QUESTION CONTENT
+========================================================= */
+
+.questionContent {
+    flex: 1 !important;
+
+    min-width: 0 !important;
+}
+
+
+.questionLabel {
+    display: inline-block !important;
+
+    margin-bottom: 7px !important;
+
+    color: #2563eb !important;
+
+    font-size: 9px !important;
+
+    font-weight: 800 !important;
+
+    text-transform: uppercase !important;
+
+    letter-spacing: 0.7px !important;
+}
+
+
+.questionContent h4 {
+    margin: 0 !important;
+
+    color: #29354a !important;
+
+    font-size: 13px !important;
+
+    font-weight: 650 !important;
+
+    line-height: 1.65 !important;
+}
+
+
+/* =========================================================
+   ANSWER CONTAINER
+========================================================= */
+
+.answerContainer {
+    margin-top: 14px !important;
+
+    padding: 13px 15px !important;
+
+    background: #f8fafc !important;
+
+    border-left: 3px solid #2563eb !important;
+
+    border-radius: 7px !important;
+}
+
+
+.answerLabel {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 6px !important;
+
+    margin-bottom: 7px !important;
+
+    color: #2563eb !important;
+
+    font-size: 10px !important;
+
+    font-weight: 800 !important;
+
+    text-transform: uppercase !important;
+
+    letter-spacing: 0.4px !important;
+}
+
+
+.answerLabel svg {
+    font-size: 10px !important;
+}
+
+
+.answerContainer p {
+    margin: 0 !important;
+
+    color: #5d6a7e !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.65 !important;
+
+    white-space: pre-wrap !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+
+/* =========================================================
+   NO QUESTIONS
+========================================================= */
+
+.noQuestions {
+    padding: 38px 20px !important;
+
+    text-align: center !important;
+
+    color: #7d899c !important;
+}
+
+
+.noQuestions > svg {
+    font-size: 30px !important;
+
+    color: #a6b4c7 !important;
+
+    margin-bottom: 10px !important;
+}
+
+
+.noQuestions h3 {
+    margin: 0 0 5px !important;
+
+    color: #4d5b70 !important;
+
+    font-size: 14px !important;
+}
+
+
+.noQuestions p {
+    margin: 0 !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   EMPTY APPLICATION
+========================================================= */
+
+.emptyApplication {
+    max-width: 600px !important;
+
+    margin: 45px auto !important;
+
+    padding: 55px 35px !important;
+
+    background: white !important;
+
+    border: 1px solid #e3e9f1 !important;
+
+    border-radius: 18px !important;
+
+    text-align: center !important;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.045) !important;
+}
+
+
+.emptyApplicationIcon {
+    width: 75px !important;
+    height: 75px !important;
+
+    margin: 0 auto 20px !important;
+
+    border-radius: 50% !important;
+
+    background: #eff6ff !important;
+
+    border: 1px solid #dbeafe !important;
+
+    color: #2563eb !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-size: 28px !important;
+}
+
+
+.emptyApplication h2 {
+    margin: 0 0 9px !important;
+
+    color: #263248 !important;
+
+    font-size: 21px !important;
+}
+
+
+.emptyApplication p {
+    max-width: 450px !important;
+
+    margin: 0 auto !important;
+
+    color: #7c889b !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.7 !important;
+}
+
+
+.emptyApplication button {
+    margin-top: 22px !important;
+
+    border: none !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        ) !important;
+
+    color: white !important;
+
+    padding: 11px 19px !important;
+
+    border-radius: 9px !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    cursor: pointer !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.18) !important;
+
+    transition: 0.2s !important;
+}
+
+
+.emptyApplication button:hover {
+    transform: translateY(-2px) !important;
+
+    box-shadow:
+        0 12px 23px rgba(37, 99, 235, 0.24) !important;
+}
+
+
+/* =========================================================
+   LOADING PAGE
+========================================================= */
+
+.myApplicationLoading {
+    min-height: 100vh !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f8fc,
+            #eef6ff
+        ) !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+
+.loadingCircle {
+    width: 48px !important;
+    height: 48px !important;
+
+    border: 4px solid #dbeafe !important;
+
+    border-top-color: #2563eb !important;
+
+    border-radius: 50% !important;
+
+    animation:
+        applicationSpin 0.8s linear infinite !important;
+
+    margin-bottom: 20px !important;
+}
+
+
+.myApplicationLoading h2 {
+    margin: 0 !important;
+
+    color: #263248 !important;
+
+    font-size: 20px !important;
+}
+
+
+.myApplicationLoading p {
+    margin: 8px 0 0 !important;
+
+    color: #8490a3 !important;
+
+    font-size: 13px !important;
+}
+
+
+@keyframes applicationSpin {
+
+    from {
+        transform: rotate(0deg) !important;
+    }
+
+    to {
+        transform: rotate(360deg) !important;
+    }
+
+}
+
+
+/* =========================================================
+   ERROR PAGE
+========================================================= */
+
+.myApplicationErrorPage {
+    min-height: 100vh !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f8fc,
+            #eef6ff
+        ) !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    padding: 25px !important;
+}
+
+
+.errorCard {
+    width: 100% !important;
+
+    max-width: 500px !important;
+
+    background: white !important;
+
+    border: 1px solid #e4eaf2 !important;
+
+    border-radius: 18px !important;
+
+    padding: 45px 35px !important;
+
+    text-align: center !important;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.07) !important;
+}
+
+
+.errorIcon {
+    width: 62px !important;
+    height: 62px !important;
+
+    margin: 0 auto 18px !important;
+
+    border-radius: 50% !important;
+
+    background: #fef2f2 !important;
+
+    color: #dc2626 !important;
+
+    border: 1px solid #fecaca !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    font-size: 27px !important;
+
+    font-weight: 800 !important;
+}
+
+
+.errorCard h2 {
+    margin: 0 0 10px !important;
+
+    color: #263248 !important;
+
+    font-size: 20px !important;
+}
+
+
+.errorCard p {
+    margin: 0 !important;
+
+    color: #7b879a !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.6 !important;
+}
+
+
+.errorActions {
+    margin-top: 24px !important;
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    gap: 10px !important;
+
+    flex-wrap: wrap !important;
+}
+
+
+.retryButton,
+.backButton {
+    padding: 10px 17px !important;
+
+    border-radius: 8px !important;
+
+    cursor: pointer !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+    transition: 0.2s !important;
+}
+
+
+.retryButton {
+    border: none !important;
+
+    background: #2563eb !important;
+
+    color: white !important;
+}
+
+
+.retryButton:hover {
+    background: #1d4ed8 !important;
+}
+
+
+.backButton {
+    border: 1px solid #dbe3ed !important;
+
+    background: white !important;
+
+    color: #56647a !important;
+}
+
+
+.backButton:hover {
+    background: #f8fafc !important;
+
+    border-color: #cbd5e1 !important;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.myApplicationFooter {
+    padding: 24px !important;
+
+    text-align: center !important;
+
+    border-top: 1px solid #e5eaf1 !important;
+
+    background: white !important;
+}
+
+
+.myApplicationFooter p {
+    margin: 0 !important;
+
+    color: #8b96a7 !important;
+
+    font-size: 11px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .myApplicationNavbar {
+        padding: 0 25px !important;
+    }
+
+
+    .myApplicationLogo {
+        min-width: auto !important;
+    }
+
+
+    .myApplicationNavLinks {
+        gap: 0 !important;
+    }
+
+
+    .myApplicationNavLinks button {
+        padding: 9px 10px !important;
+    }
+
+
+    .detailsGrid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+
+    .myApplicationHero {
+        padding: 45px 5% !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .myApplicationNavbar {
+        height: auto !important;
+
+        min-height: 68px !important;
+
+        padding: 12px 18px !important;
+
+        flex-wrap: wrap !important;
+
+        gap: 10px !important;
+    }
+
+
+    .myApplicationLogo small {
+        display: none !important;
+    }
+
+
+    .myApplicationLogo h2 {
+        font-size: 19px !important;
+    }
+
+
+    .logoMark {
+        width: 38px !important;
+        height: 38px !important;
+
+        border-radius: 10px !important;
+    }
+
+
+    .myApplicationNavLinks {
+        order: 3 !important;
+
+        width: 100% !important;
+
+        overflow-x: auto !important;
+
+        justify-content: flex-start !important;
+
+        padding-bottom: 2px !important;
+    }
+
+
+    .myApplicationNavLinks button {
+        flex-shrink: 0 !important;
+
+        font-size: 12px !important;
+
+        padding: 8px 11px !important;
+    }
+
+
+    .navbarBackButton {
+        margin-left: auto !important;
+
+        padding: 8px 11px !important;
+
+        font-size: 11px !important;
+    }
+
+
+    /* HERO */
+
+    .myApplicationHero {
+        padding: 35px 20px !important;
+
+        flex-direction: column !important;
+
+        align-items: flex-start !important;
+    }
+
+
+    .heroContent h1 {
+        font-size: 32px !important;
+    }
+
+
+    .heroContent p {
+        font-size: 13px !important;
+    }
+
+
+    .applicationCounter {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        height: 90px !important;
+
+        justify-content: flex-start !important;
+    }
+
+
+    .counterNumber {
+        font-size: 34px !important;
+    }
+
+
+    /* CONTENT */
+
+    .myApplicationContent {
+        padding: 25px 13px 50px !important;
+    }
+
+
+    /* APPLICATION CARD */
+
+    .applicationCardTop {
+        padding: 18px !important;
+
+        align-items: flex-start !important;
+
+        flex-direction: column !important;
+    }
+
+
+    .applicationDetails {
+        padding: 18px !important;
+    }
+
+
+    /* DETAILS */
+
+    .detailsGrid {
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+    }
+
+
+    /* RESUME */
+
+    .resumeSection {
+        align-items: flex-start !important;
+
+        flex-wrap: wrap !important;
+    }
+
+
+    .resumeFileInfo {
+        width: calc(100% - 65px) !important;
+
+        flex: none !important;
+    }
+
+
+    .viewResumeButton {
+        width: 100% !important;
+
+        justify-content: center !important;
+    }
+
+
+    /* QUESTIONS */
+
+    .questionCard {
+        padding: 13px !important;
+
+        gap: 10px !important;
+    }
+
+
+    .questionNumber {
+        width: 34px !important;
+        height: 34px !important;
+
+        font-size: 10px !important;
+    }
+
+
+    .questionContent h4 {
+        font-size: 12px !important;
+    }
+
+
+    .answerContainer p {
+        font-size: 12px !important;
+    }
+
+
+    .interviewTitle strong {
+        font-size: 12px !important;
+    }
+
+
+    .interviewTitle span {
+        font-size: 10px !important;
+    }
+
+
+    /* EMPTY */
+
+    .emptyApplication {
+        margin: 20px auto !important;
+
+        padding: 40px 22px !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .myApplicationLogo h2 {
+        font-size: 17px !important;
+    }
+
+
+    .navbarBackButton {
+        font-size: 0 !important;
+    }
+
+
+    .navbarBackButton svg {
+        font-size: 13px !important;
+    }
+
+
+    .heroContent h1 {
+        font-size: 28px !important;
+    }
+
+
+    .applicationJobInfo {
+        align-items: flex-start !important;
+    }
+
+
+    .applicationJobIcon {
+        width: 45px !important;
+        height: 45px !important;
+
+        font-size: 17px !important;
+    }
+
+
+    .applicationJobInfo h2 {
+        font-size: 16px !important;
+    }
+
+
+    .applicationStatus {
+        font-size: 10px !important;
+
+        padding: 7px 10px !important;
+    }
+
+
+    .applicationDetails {
+        padding: 15px !important;
+    }
+
+
+    .resumeSection {
+        padding: 12px !important;
+    }
+
+
+    .interviewHeader {
+        padding: 10px !important;
+    }
+
+
+    .interviewIcon {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+
+    .questionsContainer {
+        padding: 10px !important;
+    }
+
+
+    .questionCard {
+        flex-direction: column !important;
+    }
+
+
+    .questionNumber {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+}
+
+
+/* =====================================================
+   APPLICATION SEARCH
+===================================================== */
+
+.applicationSearchSection {
+    width: 100% !important;
+    margin-bottom: 28px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 20px !important;
+}
+
+
+/* SEARCH BOX */
+
+.applicationSearchBox {
+    position: relative !important;
+
+    flex: 1 !important;
+    max-width: 700px !important;
+
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+.applicationSearchBox input {
+    width: 100% !important;
+
+    height: 54px !important;
+
+    padding: 0 52px 0 48px !important;
+
+    border: 1px solid #d7e2f0 !important;
+
+    border-radius: 14px !important;
+
+    background: #ffffff !important;
+
+    color: #1e293b !important;
+
+    font-size: 15px !important;
+
+    outline: none !important;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease !important;
+}
+
+
+.applicationSearchBox input::placeholder {
+    color: #94a3b8 !important;
+}
+
+
+.applicationSearchBox input:focus {
+    border-color: #3b82f6 !important;
+
+    box-shadow:
+        0 0 0 4px rgba(59, 130, 246, 0.10) !important;
+
+    transform: translateY(-1px) !important;
+}
+
+
+/* SEARCH ICON */
+
+.applicationSearchIcon {
+    position: absolute !important;
+
+    left: 18px !important;
+
+    font-size: 17px !important;
+
+    color: #64748b !important;
+
+    pointer-events: none !important;
+
+    z-index: 2 !important;
+}
+
+
+/* CLEAR BUTTON */
+
+.clearSearchButton {
+    position: absolute !important;
+
+    right: 12px !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    border: none !important;
+
+    border-radius: 50% !important;
+
+    background: #eef2f7 !important;
+
+    color: #64748b !important;
+
+    font-size: 21px !important;
+
+    line-height: 1 !important;
+
+    cursor: pointer !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+
+.clearSearchButton:hover {
+    background: #dbeafe !important;
+
+    color: #2563eb !important;
+
+    transform: scale(1.05) !important;
+}
+
+
+/* SEARCH RESULT COUNT */
+
+.searchResultInfo {
+    white-space: nowrap !important;
+
+    color: #64748b !important;
+
+    font-size: 14px !important;
+}
+
+
+.searchResultInfo strong {
+    color: #2563eb !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =====================================================
+   NO SEARCH RESULTS
+===================================================== */
+
+.noSearchResults {
+    width: 100% !important;
+
+    min-height: 300px !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    padding: 50px 25px !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #e2e8f0 !important;
+
+    border-radius: 20px !important;
+}
+
+
+.noSearchResultsIcon {
+    width: 70px !important;
+
+    height: 70px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    border-radius: 18px !important;
+
+    background: #eff6ff !important;
+
+    color: #3b82f6 !important;
+
+    font-size: 28px !important;
+
+    margin-bottom: 20px !important;
+}
+
+
+.noSearchResults h2 {
+    margin: 0 0 10px !important;
+
+    color: #1e293b !important;
+
+    font-size: 22px !important;
+}
+
+
+.noSearchResults p {
+    max-width: 600px !important;
+
+    margin: 0 0 22px !important;
+
+    color: #64748b !important;
+
+    line-height: 1.6 !important;
+
+    font-size: 15px !important;
+}
+
+
+.noSearchResults p strong {
+    color: #334155 !important;
+}
+
+
+.noSearchResults button {
+    border: none !important;
+
+    padding: 11px 20px !important;
+
+    border-radius: 10px !important;
+
+    background: #2563eb !important;
+
+    color: white !important;
+
+    font-size: 14px !important;
+
+    font-weight: 600 !important;
+
+    cursor: pointer !important;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+
+.noSearchResults button:hover {
+    background: #1d4ed8 !important;
+
+    transform: translateY(-1px) !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .applicationSearchSection {
+        flex-direction: column !important;
+
+        align-items: stretch !important;
+
+    }
+
+
+    .applicationSearchBox {
+        max-width: none !important;
+    }
+
+
+    .searchResultInfo {
+        text-align: left !important;
+    }
+
+}

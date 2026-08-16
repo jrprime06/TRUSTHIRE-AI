@@ -1,0 +1,1486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   TRUSTHIRE AI - LANDING PAGE
+   Scoped CSS
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN LANDING PAGE
+   ========================================================= */
+
+.lp-landingPage {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    background: #ffffff !important;
+    color: #1E293B !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* =========================================================
+   LANDING PAGE RESET
+   ========================================================= */
+
+.lp-landingPage *,
+.lp-landingPage *::before,
+.lp-landingPage *::after {
+    box-sizing: border-box !important;
+}
+
+.lp-landingPage h1,
+.lp-landingPage h2,
+.lp-landingPage h3,
+.lp-landingPage h4,
+.lp-landingPage h5,
+.lp-landingPage h6,
+.lp-landingPage p,
+.lp-landingPage ul,
+.lp-landingPage ol {
+    margin-top: 0 !important;
+}
+
+.lp-landingPage img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+}
+
+.lp-landingPage a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.lp-landingPage button {
+    cursor: pointer !important;
+    border: none !important;
+    outline: none !important;
+    font-family: 'Poppins', sans-serif !important;
+    transition: all 0.3s ease !important;
+}
+
+
+/* =========================================================
+   COMMON SECTION
+   ========================================================= */
+
+.lp-landingPage > section {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 80px 8% !important;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.lp-landingPage .lp-landingnavbar {
+    width: 100% !important;
+    height: 80px !important;
+
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    z-index: 1000 !important;
+
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+    padding: 0 8% !important;
+
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.lp-landingPage .lp-logoArea {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-logoArea .lp-logo {
+    height: 100px !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    object-fit: contain !important;
+}
+
+.lp-landingPage .lp-lannavLinks {
+    display: flex !important;
+    align-items: center !important;
+    gap: 32px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+}
+
+.lp-landingPage .lp-lannavLinks li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-lannavLinks a {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #E2E8F0 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.lp-landingPage .lp-lannavLinks a:hover {
+    color: #818CF8 !important;
+}
+
+.lp-landingPage .lp-lanprimaryBtn {
+    background: #4F46E5 !important;
+    color: #FFFFFF !important;
+
+    padding: 10px 22px !important;
+    margin: 0 !important;
+
+    border-radius: 10px !important;
+
+    font-weight: 600 !important;
+    font-size: 14px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.lp-landingPage .lp-lanprimaryBtn:hover {
+    background: #4338CA !important;
+    transform: translateY(-2px) !important;
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.lp-landingPage .lp-lanhero {
+    width: 100% !important;
+    min-height: 100vh !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    margin: 0 !important;
+
+    padding-top: 140px !important;
+    padding-right: 8% !important;
+    padding-bottom: 80px !important;
+    padding-left: 8% !important;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #EEF2FF 0%,
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            #F1F5F9 0%,
+            transparent 50%
+        ),
+        #FFFFFF !important;
+
+    gap: 40px !important;
+}
+
+.lp-landingPage .lp-heroLeft {
+    flex: 1 !important;
+    max-width: 600px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-heroBadge {
+    display: inline-block !important;
+
+    margin: 0 0 20px 0 !important;
+    padding: 6px 16px !important;
+
+    background: #EEF2FF !important;
+    color: #4F46E5 !important;
+
+    font-size: 12px !important;
+    font-weight: 700 !important;
+
+    border-radius: 20px !important;
+
+    letter-spacing: 0.5px !important;
+}
+
+.lp-landingPage .lp-heroLeft h1 {
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+
+    font-size: 52px !important;
+    line-height: 1.15 !important;
+    font-weight: 800 !important;
+
+    color: #0F172A !important;
+}
+
+.lp-landingPage .lp-heroLeft h1 span {
+    color: #4F46E5 !important;
+}
+
+.lp-landingPage .lp-heroLeft p {
+    margin: 0 0 32px 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    color: #64748B !important;
+    line-height: 1.6 !important;
+}
+
+.lp-landingPage .lp-heroButtons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-primaryBtn {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    margin: 0 !important;
+    padding: 14px 28px !important;
+
+    background: #4F46E5 !important;
+    color: #FFFFFF !important;
+
+    border-radius: 12px !important;
+
+    font-weight: 600 !important;
+    font-size: 15px !important;
+
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.25) !important;
+}
+
+.lp-landingPage .lp-primaryBtn:hover {
+    background: #4338CA !important;
+    transform: translateY(-2px) !important;
+}
+
+.lp-landingPage .lp-secondaryBtn {
+    margin: 0 !important;
+    padding: 14px 28px !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #CBD5E1 !important;
+    border-radius: 12px !important;
+
+    color: #334155 !important;
+
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+
+.lp-landingPage .lp-secondaryBtn:hover {
+    background: #F8FAFC !important;
+    border-color: #94A3B8 !important;
+}
+
+.lp-landingPage .lp-heroRight {
+    flex: 1 !important;
+    position: relative !important;
+
+    display: flex !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-dashboardCard {
+    background: #FFFFFF !important;
+    border-radius: 20px !important;
+
+    margin: 0 !important;
+    padding: 12px !important;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #E2E8F0 !important;
+}
+
+.lp-landingPage .lp-dashboardImage {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 12px !important;
+}
+
+.lp-landingPage .lp-floatingCard {
+    position: absolute !important;
+
+    bottom: -20px !important;
+    left: -10px !important;
+
+    background: #FFFFFF !important;
+
+    margin: 0 !important;
+    padding: 12px 20px !important;
+
+    border-radius: 16px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #F1F5F9 !important;
+}
+
+.lp-landingPage .lp-candidateImage {
+    width: 44px !important;
+    height: 44px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+.lp-landingPage .lp-floatingCard h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 14px !important;
+    color: #0F172A !important;
+    font-weight: 700 !important;
+}
+
+.lp-landingPage .lp-floatingCard p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 12px !important;
+    color: #64748B !important;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   IMPORTANT:
+   JSX actually uses .landingsectionTitle
+   ========================================================= */
+
+.lp-landingPage .landingsectionTitle {
+    width: 100% !important;
+
+    text-align: center !important;
+
+    margin: 0 0 48px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .landingsectionTitle span {
+    display: inline-block !important;
+
+    margin: 0 0 8px 0 !important;
+    padding: 4px 14px !important;
+
+    border-radius: 20px !important;
+
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+}
+
+.lp-landingPage .landingsectionTitle h2 {
+    margin: 10px 0 0 0 !important;
+    padding: 0 !important;
+
+    font-size: 36px !important;
+    font-weight: 800 !important;
+
+    color: #0F172A !important;
+
+    letter-spacing: -0.5px !important;
+    line-height: 1.2 !important;
+}
+
+.lp-landingPage .landingsectionTitle p {
+    color: #64748B !important;
+
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+
+    max-width: 600px !important;
+
+    margin: 10px auto 0 auto !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-badgeRed {
+    background: #FEE2E2 !important;
+    color: #EF4444 !important;
+}
+
+.lp-landingPage .lp-badgeBlue {
+    background: #EEF2FF !important;
+    color: #4F46E5 !important;
+}
+
+.lp-landingPage .lp-badgeGreen {
+    background: #D1FAE5 !important;
+    color: #10B981 !important;
+}
+
+
+/* =========================================================
+   PROBLEM SECTION
+   ========================================================= */
+
+.lp-landingPage .lp-problemSection {
+    width: 100% !important;
+    margin: 0 !important;
+
+    background-color: #f2eeee !important;
+
+    padding: 80px 8% !important;
+}
+
+.lp-landingPage .lp-problemGrid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+
+    margin: 40px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-problemCard {
+    width: 100% !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #F1F5F9 !important;
+    border-radius: 16px !important;
+
+    margin: 0 !important;
+    padding: 32px 28px !important;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+
+    transition: all 0.25s ease-in-out !important;
+
+    text-align: left !important;
+}
+
+.lp-landingPage .lp-problemCard:hover {
+    border-color: #FECACA !important;
+
+    box-shadow:
+        0 10px 25px rgba(239, 68, 68, 0.08) !important;
+
+    transform: translateY(-4px) !important;
+}
+
+.lp-landingPage .lp-iconBoxRed {
+    width: 42px !important;
+    height: 42px !important;
+
+    border-radius: 50% !important;
+
+    background-color: #FEF2F2 !important;
+    color: #EF4444 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 18px !important;
+
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-problemCard h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+    color: #0F172A !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-problemCard p {
+    font-size: 14px !important;
+
+    line-height: 1.6 !important;
+
+    color: #64748B !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   SOLUTION SECTION
+   ========================================================= */
+
+.lp-landingPage .lp-solutionSection {
+    width: 100% !important;
+
+    background-color: #f2eeee !important;
+
+    margin: 0 !important;
+    padding: 80px 8% !important;
+}
+
+.lp-landingPage .lp-solutionGrid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-solutionCard {
+    width: 100% !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #F1F5F9 !important;
+    border-radius: 16px !important;
+
+    margin: 0 !important;
+    padding: 32px 28px !important;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+
+    transition: all 0.25s ease-in-out !important;
+
+    text-align: left !important;
+}
+
+.lp-landingPage .lp-solutionCard:hover {
+    border-color: #C7D2FE !important;
+
+    box-shadow:
+        0 10px 25px rgba(79, 70, 229, 0.08) !important;
+
+    transform: translateY(-4px) !important;
+}
+
+.lp-landingPage .lp-iconBoxBlue {
+    width: 42px !important;
+    height: 42px !important;
+
+    border-radius: 12px !important;
+
+    background: #EEF2FF !important;
+    color: #4F46E5 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 18px !important;
+
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-solutionCard h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+    color: #0F172A !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-solutionCard p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+
+    color: #64748B !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.lp-landingPage .lp-features {
+    width: 100% !important;
+
+    background: #f2eeee !important;
+
+    margin: 0 !important;
+    padding: 80px 8% !important;
+}
+
+.lp-landingPage .lp-featureGrid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-featureCard {
+    width: 100% !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 16px !important;
+
+    margin: 0 !important;
+    padding: 32px 28px !important;
+
+    text-align: left !important;
+
+    transition: all 0.25s ease !important;
+}
+
+.lp-landingPage .lp-featureCard:hover {
+    border-color: #818CF8 !important;
+
+    transform: translateY(-4px) !important;
+
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.04) !important;
+}
+
+.lp-landingPage .lp-featureIcon {
+    font-size: 28px !important;
+
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-featureCard h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+    color: #0F172A !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-featureCard p {
+    font-size: 14px !important;
+
+    color: #64748B !important;
+
+    line-height: 1.6 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   DASHBOARD PREVIEW
+   ========================================================= */
+
+.lp-landingPage .lp-dashboardSection {
+    width: 100% !important;
+
+    background: #f2eeee !important;
+
+    padding: 80px 8% !important;
+
+    text-align: center !important;
+
+    margin: 0 !important;
+}
+
+.lp-landingPage .lp-dashboardPreviewWrapper {
+    max-width: 1100px !important;
+
+    margin: 40px auto 0 auto !important;
+    padding: 0 !important;
+
+    border-radius: 20px !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.12) !important;
+
+    border: 1px solid #E2E8F0 !important;
+
+    background: #FFFFFF !important;
+
+    transition: transform 0.3s ease !important;
+}
+
+.lp-landingPage .lp-dashboardPreviewWrapper:hover {
+    transform: translateY(-4px) !important;
+}
+
+.lp-landingPage .lp-fullDashboardImage {
+    width: 100% !important;
+    height: auto !important;
+
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   WORKFLOW
+   ========================================================= */
+
+.lp-landingPage .lp-workflow {
+    width: 100% !important;
+
+    background: #f2eeee !important;
+
+    margin: 0 !important;
+    padding: 80px 8% !important;
+}
+
+.lp-landingPage .lp-workflowSteps {
+    display: grid !important;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 20px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-stepCard {
+    width: 100% !important;
+
+    background: #FFFFFF !important;
+
+    padding: 28px 24px !important;
+    margin: 0 !important;
+
+    border-radius: 16px !important;
+
+    border: 1px solid #E2E8F0 !important;
+
+    text-align: left !important;
+
+    transition: all 0.25s ease !important;
+}
+
+.lp-landingPage .lp-stepCard:hover {
+    transform: translateY(-4px) !important;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.04) !important;
+}
+
+.lp-landingPage .lp-stepNum {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+
+    color: #CBD5E1 !important;
+
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-stepCard h3 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    color: #0F172A !important;
+
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-stepCard p {
+    font-size: 13px !important;
+
+    color: #64748B !important;
+
+    line-height: 1.5 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   WHY CHOOSE
+   ========================================================= */
+
+.lp-landingPage .lp-whyChoose {
+    width: 100% !important;
+
+    background: #f2eeee !important;
+
+    margin: 0 !important;
+    padding: 80px 8% !important;
+}
+
+.lp-landingPage .lp-whyGrid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-whyCard {
+    width: 100% !important;
+
+    background: #F8FAFC !important;
+
+    padding: 30px !important;
+    margin: 0 !important;
+
+    border-radius: 16px !important;
+
+    border: 1px solid #E2E8F0 !important;
+
+    text-align: left !important;
+}
+
+.lp-landingPage .lp-whyCard h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+
+    color: #0F172A !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-whyCard p {
+    font-size: 14px !important;
+
+    color: #64748B !important;
+
+    line-height: 1.6 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.lp-landingPage .lp-metricsBanner {
+    width: 100% !important;
+
+    background: #0F172A !important;
+
+    padding: 60px 8% !important;
+    margin: 0 !important;
+
+    display: flex !important;
+
+    justify-content: space-around !important;
+    align-items: center !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 30px !important;
+
+    text-align: center !important;
+}
+
+.lp-landingPage .lp-metricItem {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-metricItem h2 {
+    font-size: 44px !important;
+
+    color: #818CF8 !important;
+
+    font-weight: 800 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-metricItem p {
+    color: #94A3B8 !important;
+
+    font-size: 14px !important;
+
+    margin: 4px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+.lp-landingPage .lp-testimonials {
+    width: 100% !important;
+
+    padding: 130px 8% !important;
+
+    margin: 0 !important;
+
+    background: #f2eeee !important;
+}
+
+.lp-landingPage .lp-testimonialGrid {
+    display: grid !important;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 35px !important;
+
+    margin: 70px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-testimonialCard {
+    width: 100% !important;
+
+    background: #FFFFFF !important;
+
+    padding: 40px !important;
+    margin: 0 !important;
+
+    border-radius: 24px !important;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.05) !important;
+
+    transition: 0.35s !important;
+}
+
+.lp-landingPage .lp-testimonialCard:hover {
+    transform: translateY(-12px) !important;
+
+    box-shadow:
+        0 30px 60px rgba(79, 70, 229, 0.18) !important;
+}
+
+.lp-landingPage .lp-stars {
+    color: #FBBF24 !important;
+
+    font-size: 22px !important;
+
+    margin: 0 0 25px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-testimonialCard p {
+    color: #6B7280 !important;
+
+    line-height: 30px !important;
+
+    margin: 0 0 30px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-client {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 15px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-client img {
+    width: 65px !important;
+    height: 65px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 50% !important;
+
+    object-fit: cover !important;
+}
+
+.lp-landingPage .lp-client h4 {
+    color: #111827 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-client span {
+    color: #777 !important;
+
+    font-size: 14px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.lp-landingPage .lp-faq {
+    width: 100% !important;
+
+    background: #f2eeee !important;
+
+    margin: 0 !important;
+    padding: 80px 8% !important;
+}
+
+.lp-landingPage .lp-faqContainer {
+    max-width: 800px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 16px !important;
+}
+
+.lp-landingPage .lp-faqItem {
+    width: 100% !important;
+
+    background: #F8FAFC !important;
+
+    padding: 24px 28px !important;
+    margin: 0 !important;
+
+    border-radius: 14px !important;
+
+    border: 1px solid #E2E8F0 !important;
+
+    text-align: left !important;
+}
+
+.lp-landingPage .lp-faqItem h3 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    color: #0F172A !important;
+
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-faqItem p {
+    font-size: 14px !important;
+
+    color: #64748B !important;
+
+    line-height: 1.6 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.lp-landingPage .lp-CTA {
+    width: 100% !important;
+
+    background: #f2eeee !important;
+
+    margin: 0 !important;
+
+    padding: 40px 8% !important;
+}
+
+
+/*
+   Your JSX has:
+
+   <section className="CTA">
+       <section className="ctaBanner">
+           ...
+       </section>
+   </section>
+
+   Therefore we specifically target the inner section.
+*/
+
+.lp-landingPage .lp-CTA > .lp-ctaBanner {
+    width: auto !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4F46E5 0%,
+            #3730A3 100%
+        ) !important;
+
+    color: #FFFFFF !important;
+
+    text-align: center !important;
+
+    border-radius: 24px !important;
+
+    margin: 0 !important;
+
+    padding: 60px 40px !important;
+}
+
+.lp-landingPage .lp-ctaBanner h2 {
+    font-size: 36px !important;
+
+    font-weight: 800 !important;
+
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
+
+    color: #FFFFFF !important;
+}
+
+.lp-landingPage .lp-ctaBanner p {
+    font-size: 16px !important;
+
+    color: #C7D2FE !important;
+
+    margin: 0 0 28px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-ctaBtn {
+    background: #FFFFFF !important;
+
+    color: #4F46E5 !important;
+
+    padding: 14px 32px !important;
+
+    margin: 0 !important;
+
+    border-radius: 12px !important;
+
+    font-weight: 700 !important;
+
+    font-size: 15px !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.lp-landingPage .lp-ctaBtn:hover {
+    background: #F8FAFC !important;
+
+    transform: translateY(-2px) !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.lp-landingPage .lp-footer {
+    width: 100% !important;
+
+    background: #090D16 !important;
+
+    color: #94A3B8 !important;
+
+    padding: 70px 8% 30px !important;
+
+    margin: 0 !important;
+}
+
+.lp-landingPage .lp-footerTop {
+    display: grid !important;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1.5fr !important;
+
+    gap: 40px !important;
+
+    margin: 0 0 40px 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-footerBrand {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-footerLogo {
+    height: 100px !important;
+
+    width: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-footerBrand p {
+    font-size: 13px !important;
+
+    line-height: 1.6 !important;
+
+    margin: 16px 0 0 0 !important;
+    padding: 0 !important;
+
+    color: #64748B !important;
+}
+
+.lp-landingPage .lp-footerCol {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.lp-landingPage .lp-footerCol h4 {
+    color: #FFFFFF !important;
+
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.lp-landingPage .lp-footerCol a,
+.lp-landingPage .lp-footerCol p {
+    display: block !important;
+
+    color: #94A3B8 !important;
+
+    font-size: 14px !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+
+    transition: color 0.2s ease !important;
+}
+
+.lp-landingPage .lp-footerCol a:hover {
+    color: #FFFFFF !important;
+}
+
+.lp-landingPage .lp-smallBtn {
+    padding: 8px 16px !important;
+
+    font-size: 13px !important;
+
+    margin: 8px 0 0 0 !important;
+}
+
+.lp-landingPage .lp-footerBottom {
+    border-top: 1px solid #1E293B !important;
+
+    padding: 24px 0 0 0 !important;
+    margin: 0 !important;
+
+    text-align: center !important;
+
+    font-size: 13px !important;
+
+    color: #64748B !important;
+}
+
+.lp-landingPage .lp-footerBottom p {
+    margin: 0 0 6px 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .lp-landingPage .lp-problemGrid,
+    .lp-landingPage .lp-solutionGrid,
+    .lp-landingPage .lp-featureGrid,
+    .lp-landingPage .lp-whyGrid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .lp-landingPage .lp-workflowSteps {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .lp-landingPage .lp-lanhero {
+        flex-direction: column !important;
+
+        text-align: center !important;
+    }
+
+    .lp-landingPage .lp-heroLeft {
+        max-width: 100% !important;
+    }
+
+    .lp-landingPage .lp-heroButtons {
+        justify-content: center !important;
+    }
+
+    .lp-landingPage .lp-footerTop {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .lp-landingPage .lp-lannavLinks {
+        display: none !important;
+    }
+
+    .lp-landingPage > section {
+        padding: 60px 5% !important;
+    }
+
+    .lp-landingPage .lp-problemGrid,
+    .lp-landingPage .lp-solutionGrid,
+    .lp-landingPage .lp-featureGrid,
+    .lp-landingPage .lp-whyGrid,
+    .lp-landingPage .lp-workflowSteps {
+        grid-template-columns: 1fr !important;
+    }
+
+    .lp-landingPage .lp-heroLeft h1 {
+        font-size: 36px !important;
+    }
+
+    .lp-landingPage .lp-heroButtons {
+        flex-direction: column !important;
+    }
+
+    .lp-landingPage .lp-primaryBtn,
+    .lp-landingPage .lp-secondaryBtn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .lp-landingPage .lp-footerTop {
+        grid-template-columns: 1fr !important;
+    }
+
+    .lp-landingPage .landingsectionTitle h2 {
+        font-size: 30px !important;
+    }
+
+    .lp-landingPage .lp-testimonialGrid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .lp-landingPage .lp-testimonialCard {
+        padding: 30px !important;
+    }
+
+    .lp-landingPage .lp-CTA {
+        padding: 30px 5% !important;
+    }
+
+    .lp-landingPage .lp-CTA > .lp-ctaBanner {
+        padding: 45px 25px !important;
+    }
+
+    .lp-landingPage .lp-ctaBanner h2 {
+        font-size: 28px !important;
+    }
+}
+
+
+/* =========================================================
+   EXTRA PROTECTION AGAINST GLOBAL CSS
+   ========================================================= */
+
+/*
+   These make sure global styles from other page CSS files
+   cannot easily change the Landing Page typography/layout.
+*/
+
+.lp-landingPage p,
+.lp-landingPage h1,
+.lp-landingPage h2,
+.lp-landingPage h3,
+.lp-landingPage h4,
+.lp-landingPage span,
+.lp-landingPage a,
+.lp-landingPage button,
+.lp-landingPage img,
+.lp-landingPage ul,
+.lp-landingPage li {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.lp-landingPage p {
+    line-height: 1.6 !important;
+}
+
+.lp-landingPage ul {
+    list-style: none !important;
+}
+
+.lp-landingPage li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   END
+   ========================================================= */

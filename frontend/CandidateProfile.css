@@ -1,0 +1,168 @@
+.candidate-profile-page {
+    min-height: 100vh !important;
+    padding: 40px !important;
+    background: #f5f7fb !important;
+}
+
+.profile-card {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 35px !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.profile-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+    margin-bottom: 35px !important;
+}
+
+.profile-avatar {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #2563eb !important;
+    color: white !important;
+    font-size: 28px !important;
+    font-weight: bold !important;
+}
+
+.profile-header h1 {
+    margin: 0 !important;
+}
+
+.profile-header p {
+    margin-top: 6px !important;
+    color: #777 !important;
+}
+
+.form-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 22px !important;
+}
+
+.form-group {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.form-group label {
+    margin-bottom: 7px !important;
+    font-weight: 600 !important;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px 14px !important;
+    border: 1px solid #d7dce5 !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+    outline: none !important;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb !important;
+}
+
+.form-group input:disabled {
+    background: #f0f2f5 !important;
+    cursor: not-allowed !important;
+}
+
+.full-width {
+    grid-column: 1 / -1 !important;
+}
+
+.profile-actions {
+    margin-top: 30px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+.profile-actions button,
+.password-header button,
+.password-form button {
+    border: none !important;
+    padding: 12px 22px !important;
+    border-radius: 8px !important;
+    background: #2563eb !important;
+    color: white !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+}
+
+.profile-actions button:disabled {
+    opacity: 0.6 !important;
+}
+
+.password-section {
+    margin-top: 40px !important;
+    padding-top: 30px !important;
+    border-top: 1px solid #e5e7eb !important;
+}
+
+.password-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.password-header h2 {
+    margin: 0 !important;
+}
+
+.password-header p {
+    color: #777 !important;
+}
+
+.password-form {
+    margin-top: 25px !important;
+    max-width: 500px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+}
+
+.password-form button {
+    align-self: flex-start !important;
+}
+
+.profile-loading {
+    min-height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+@media (max-width: 700px) {
+
+    .candidate-profile-page {
+        padding: 20px !important;
+    }
+
+    .profile-card {
+        padding: 22px !important;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .full-width {
+        grid-column: auto !important;
+    }
+
+    .password-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+}

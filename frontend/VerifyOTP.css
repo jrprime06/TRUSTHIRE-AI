@@ -1,0 +1,94 @@
+.otp-page {
+    min-height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #f5f7fb !important;
+}
+
+.otp-card {
+    width: 420px !important;
+    background: white !important;
+    padding: 40px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1) !important;
+    text-align: center !important;
+}
+
+.otp-card h1 {
+    margin-bottom: 15px !important;
+}
+
+.otp-description {
+    color: #666 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 30px !important;
+}
+
+.otp-card form {
+    text-align: left !important;
+}
+
+.otp-card label {
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-weight: 600 !important;
+}
+
+.otp-card input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 14px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    font-size: 22px !important;
+    text-align: center !important;
+    letter-spacing: 8px !important;
+    margin-bottom: 20px !important;
+}
+
+.otp-card form button {
+    width: 100% !important;
+    padding: 14px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: #2563eb !important;
+    color: white !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+}
+
+.otp-card form button:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+}
+
+.resend-section {
+    margin-top: 25px !important;
+}
+
+.resend-section p {
+    color: #666 !important;
+}
+
+.resend-btn {
+    background: transparent !important;
+    border: none !important;
+    color: #2563eb !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    font-size: 15px !important;
+}
+
+.resend-btn:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+}
+
+.back-login {
+    margin-top: 20px !important;
+    background: transparent !important;
+    border: none !important;
+    color: #666 !important;
+    cursor: pointer !important;
+}

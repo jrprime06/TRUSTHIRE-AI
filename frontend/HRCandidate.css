@@ -1,0 +1,856 @@
+/* ===========================================================
+   HR Candidate Page
+=========================================================== */
+
+.hr-main-content{
+
+    padding:30px  !important;
+
+    background:#f4f7fc  !important;
+
+    min-height:100vh  !important;
+
+}
+
+/* ================= Header ================= */
+
+.candidate-header{
+
+    display:flex  !important;
+
+    justify-content:space-between  !important;
+
+    align-items:center  !important;
+
+    margin-bottom:25px  !important;
+
+}
+
+.candidate-header h1{
+
+    font-size:32px  !important;
+
+    color:#1f2937  !important;
+
+    font-weight:700  !important;
+
+    margin-bottom:6px  !important;
+
+}
+
+.candidate-header p{
+
+    color:#64748b  !important;
+
+    font-size:15px  !important;
+
+}
+
+/* ================= Toolbar ================= */
+
+.candidate-toolbar{
+
+    display:flex  !important;
+
+    align-items:center  !important;
+
+    justify-content:space-between  !important;
+
+    gap:20px  !important;
+
+    margin-bottom:25px  !important;
+
+}
+
+.candidate-toolbar input{
+
+    flex:1  !important;
+
+    width:100%  !important;
+
+    height:50px  !important;
+
+    padding:0 18px  !important;
+
+    border-radius:12px  !important;
+
+    border:1px solid #dbe4f0  !important;
+
+    background:#fff  !important;
+
+    font-size:15px  !important;
+
+    transition:.3s  !important;
+
+}
+
+.candidate-toolbar input:focus{
+
+    border-color:#2563eb  !important;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10)  !important;
+
+    outline:none  !important;
+
+}
+
+.candidate-toolbar select{
+
+    width:220px  !important;
+
+    height:50px  !important;
+
+    border-radius:12px  !important;
+
+    border:1px solid #dbe4f0  !important;
+
+    background:#fff  !important;
+
+    padding:0 15px  !important;
+
+    cursor:pointer  !important;
+
+    font-size:15px  !important;
+
+}
+
+/* ================= Card ================= */
+
+.hr-table-card{
+
+    background:#fff  !important;
+
+    border-radius:18px  !important;
+
+    overflow:hidden  !important;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.08)  !important;
+
+}
+
+/* ================= Card Header ================= */
+
+.hr-table-header{
+
+    display:flex  !important;
+
+    justify-content:space-between  !important;
+
+    align-items:center  !important;
+
+    padding:22px 28px  !important;
+
+    border-bottom:1px solid #edf2f7  !important;
+
+}
+
+.hr-table-header h3{
+
+    font-size:22px  !important;
+
+    color:#1f2937  !important;
+
+}
+
+.hr-table-header span{
+
+    font-size:14px  !important;
+
+    color:#64748b  !important;
+
+}
+
+/* ===========================================================
+   Table
+=========================================================== */
+.hr-table-wrapper{
+
+    width:100%  !important;
+
+    overflow-x:auto  !important;
+
+    overflow-y:hidden  !important;
+
+}
+
+.hr-table{
+
+    min-width:1700px  !important;
+
+    width:100%  !important;
+
+    border-collapse:collapse  !important;
+
+}
+
+.hr-table thead{
+
+    background:#f8fafc  !important;
+
+}
+
+.hr-table th{
+
+    padding:18px 16px  !important;
+
+    text-align:left  !important;
+
+    color:#475569  !important;
+
+    font-size:14px  !important;
+
+    font-weight:700  !important;
+
+    border-bottom:1px solid #e5e7eb  !important;
+
+}
+
+.hr-table td{
+
+    padding:18px 16px  !important;
+
+    border-bottom:1px solid #edf2f7  !important;
+
+    vertical-align:middle  !important;
+
+    overflow:hidden  !important;
+
+    text-overflow:ellipsis  !important;
+
+    white-space:nowrap  !important;
+
+}
+
+.hr-table tbody tr{
+
+    transition:.25s  !important;
+
+}
+
+.hr-table tbody tr:hover{
+
+    background:#f8fbff  !important;
+
+}
+
+/* ===========================================================
+   Column Width
+=========================================================== */
+
+.hr-table th:nth-child(1),
+.hr-table td:nth-child(1){
+
+    width:280px  !important;
+
+}
+
+.hr-table th:nth-child(2),
+.hr-table td:nth-child(2){
+
+    width:260px  !important;
+
+}
+
+.hr-table th:nth-child(3),
+.hr-table td:nth-child(3){
+
+    width:150px  !important;
+
+}
+
+.hr-table th:nth-child(4),
+.hr-table td:nth-child(4){
+
+    width:110px  !important;
+
+}
+
+.hr-table th:nth-child(5),
+.hr-table td:nth-child(5){
+
+    width:120px  !important;
+
+}
+
+.hr-table th:nth-child(6),
+.hr-table td:nth-child(6){
+
+    width:140px  !important;
+
+}
+
+.hr-table th:nth-child(7),
+.hr-table td:nth-child(7){
+
+    width:120px  !important;
+
+}
+
+/* ===========================================================
+   Candidate Cell
+=========================================================== */
+
+.hr-candidate-cell{
+
+    display:flex  !important;
+
+    align-items:center  !important;
+
+    gap:15px  !important;
+
+    min-width:0  !important;
+
+}
+
+.hr-candidate-cell img{
+
+    width:52px  !important;
+
+    height:52px  !important;
+
+    border-radius:50%  !important;
+
+    object-fit:cover  !important;
+
+    border:3px solid #e5e7eb  !important;
+
+    flex-shrink:0  !important;
+
+}
+
+.hr-candidate-cell div{
+
+    min-width:0  !important;
+
+}
+
+.hr-candidate-cell h4{
+
+    margin:0  !important;
+
+    font-size:15px  !important;
+
+    font-weight:600  !important;
+
+    color:#111827  !important;
+
+    overflow:hidden  !important;
+
+    white-space:nowrap  !important;
+
+    text-overflow:ellipsis  !important;
+
+}
+
+.hr-candidate-cell span{
+
+    display:block  !important;
+
+    margin-top:4px  !important;
+
+    font-size:13px  !important;
+
+    color:#6b7280  !important;
+
+    overflow:hidden  !important;
+
+    white-space:nowrap  !important;
+
+    text-overflow:ellipsis  !important;
+
+}
+
+/* ===========================================================
+   Score Badges
+=========================================================== */
+
+.ats-score{
+
+    color:#2563eb  !important;
+
+    font-weight:700  !important;
+
+}
+
+.trust-score{
+
+    color:#16a34a  !important;
+
+    font-weight:700  !important;
+
+}
+
+.fraud-score{
+
+    color:#dc2626  !important;
+
+    font-weight:700  !important;
+
+}
+
+/* ===========================================================
+   Status
+=========================================================== */
+
+.hr-status{
+
+    display:inline-flex  !important;
+
+    align-items:center  !important;
+
+    justify-content:center  !important;
+
+    min-width:90px  !important;
+
+    height:34px  !important;
+
+    border-radius:30px  !important;
+
+    font-size:13px  !important;
+
+    font-weight:600  !important;
+
+}
+
+.hr-verified{
+
+    background:#dcfce7  !important;
+
+    color:#15803d  !important;
+
+}
+
+.hr-pending{
+
+    background:#fef3c7  !important;
+
+    color:#b45309  !important;
+
+}
+
+.hr-rejected{
+
+    background:#fee2e2  !important;
+
+    color:#dc2626  !important;
+
+}
+/* ===========================================================
+   View Button
+=========================================================== */
+
+.hr-btn-view{
+
+    width:90px  !important;
+
+    height:38px  !important;
+
+    border:none  !important;
+
+    border-radius:10px  !important;
+
+    background:#2563eb  !important;
+
+    color:#fff  !important;
+
+    font-size:14px  !important;
+
+    font-weight:600  !important;
+
+    cursor:pointer  !important;
+
+    transition:.3s  !important;
+
+}
+
+.hr-btn-view:hover{
+
+    background:#1d4ed8  !important;
+
+    transform:translateY(-2px)  !important;
+
+}
+
+/* ===========================================================
+   Footer
+=========================================================== */
+
+.candidate-footer{
+
+    display:flex  !important;
+
+    justify-content:space-between  !important;
+
+    align-items:center  !important;
+
+    padding:22px 28px  !important;
+
+    border-top:1px solid #edf2f7  !important;
+
+    background:#fff  !important;
+
+}
+
+.candidate-footer p{
+
+    color:#64748b  !important;
+
+    font-size:14px  !important;
+
+}
+
+.candidate-footer strong{
+
+    color:#111827  !important;
+
+}
+
+/* ===========================================================
+   Pagination
+=========================================================== */
+
+.pagination{
+
+    display:flex  !important;
+
+    gap:10px  !important;
+
+    align-items:center  !important;
+
+    flex-wrap:wrap  !important;
+
+}
+
+.pagination button{
+
+    min-width:40px  !important;
+
+    height:38px  !important;
+
+    border-radius:10px  !important;
+
+    border:1px solid #dbe4f0  !important;
+
+    background:#fff  !important;
+
+    color:#475569  !important;
+
+    cursor:pointer  !important;
+
+    transition:.3s  !important;
+
+    padding:0 15px  !important;
+
+    font-weight:500  !important;
+
+}
+
+.pagination button:hover{
+
+    border-color:#2563eb  !important;
+
+    color:#2563eb  !important;
+
+}
+
+.pagination button:disabled{
+
+    opacity:.5  !important;
+
+    cursor:not-allowed  !important;
+
+}
+
+.pagination .active-page{
+
+    background:#2563eb  !important;
+
+    color:#fff  !important;
+
+    border-color:#2563eb  !important;
+
+}
+
+/* ===========================================================
+   Loading
+=========================================================== */
+
+.loading{
+
+    padding:60px  !important;
+
+    text-align:center  !important;
+
+    font-size:18px  !important;
+
+    color:#64748b  !important;
+
+}
+
+/* ===========================================================
+   No Data
+=========================================================== */
+
+.no-data{
+
+    padding:60px  !important;
+
+    text-align:center  !important;
+
+    color:#94a3b8  !important;
+
+    font-size:18px  !important;
+
+}
+
+/* ===========================================================
+   Candidate Details Popup
+=========================================================== */
+
+.popup-overlay{
+
+    position:fixed  !important;
+
+    inset:0  !important;
+
+    background:rgba(0,0,0,.45)  !important;
+
+    display:flex  !important;
+
+    justify-content:center  !important;
+
+    align-items:center  !important;
+
+    z-index:9999  !important;
+
+}
+
+.popup{
+
+    width:700px  !important;
+
+    max-width:95%  !important;
+
+    background:#fff  !important;
+
+    border-radius:18px  !important;
+
+    overflow:hidden  !important;
+
+    animation:popupShow .25s ease  !important;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.20)  !important;
+
+}
+
+@keyframes popupShow{
+
+    from{
+
+        opacity:0  !important;
+
+        transform:translateY(20px)  !important;
+
+    }
+
+    to{
+
+        opacity:1  !important;
+
+        transform:translateY(0)  !important;
+
+    }
+
+}
+
+.popup-header{
+
+    display:flex  !important;
+
+    justify-content:space-between  !important;
+
+    align-items:center  !important;
+
+    padding:20px 25px  !important;
+
+    border-bottom:1px solid #edf2f7  !important;
+
+}
+
+.popup-header h2{
+
+    font-size:24px  !important;
+
+    color:#1f2937  !important;
+
+}
+
+.popup-close{
+
+    border:none  !important;
+
+    background:none  !important;
+
+    font-size:26px  !important;
+
+    cursor:pointer  !important;
+
+}
+
+.candidate-details{
+
+    display:flex  !important;
+
+    gap:30px  !important;
+
+    padding:30px  !important;
+
+    align-items:flex-start  !important;
+
+}
+
+.candidate-image{
+
+    flex:0 0 180px  !important;
+
+}
+
+.candidate-image img{
+
+    width:180px  !important;
+
+    height:180px  !important;
+
+    border-radius:50%  !important;
+
+    object-fit:cover  !important;
+
+    border:5px solid #edf2f7  !important;
+
+}
+
+.candidate-info{
+
+    flex:1  !important;
+
+}
+
+.candidate-info p{
+
+    margin-bottom:15px  !important;
+
+    font-size:15px  !important;
+
+    color:#374151  !important;
+
+}
+
+.candidate-info strong{
+
+    color:#111827  !important;
+
+    width:120px  !important;
+
+    display:inline-block  !important;
+
+}
+
+/* ===========================================================
+   Responsive
+=========================================================== */
+
+@media(max-width:992px){
+
+    .candidate-toolbar{
+
+        flex-direction:column  !important;
+
+        align-items:stretch  !important;
+
+    }
+
+    .candidate-toolbar input{
+
+        width:100%  !important;
+
+    }
+
+    .candidate-toolbar select{
+
+        width:100%  !important;
+
+    }
+
+    .candidate-footer{
+
+        flex-direction:column  !important;
+
+        gap:15px  !important;
+
+        align-items:flex-start  !important;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .candidate-details{
+
+        flex-direction:column  !important;
+
+        align-items:center  !important;
+
+        text-align:center  !important;
+
+    }
+
+    .candidate-image{
+
+        flex:none  !important;
+
+    }
+
+    .candidate-image img{
+
+        width:140px  !important;
+
+        height:140px  !important;
+
+    }
+
+    .candidate-info{
+
+        width:100%  !important;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hr-table th,
+
+    .hr-table td{
+
+        padding:12px 10px  !important;
+
+        font-size:13px  !important;
+
+    }
+
+    .hr-candidate-cell img{
+
+        width:42px  !important;
+
+        height:42px  !important;
+
+    }
+
+    .candidate-header h1{
+
+        font-size:26px  !important;
+
+    }
+
+}

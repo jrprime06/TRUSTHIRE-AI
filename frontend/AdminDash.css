@@ -1,0 +1,429 @@
+/* ========================================================
+   1. Core Dashboard Layout & Reset
+======================================================== */
+.hr-dashboard-layout {
+  font-family: "Poppins", "Inter", sans-serif;
+  background-color: #F8FAFC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hr-dashboard-layout * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================================
+   2. Top Navigation Bar
+======================================================== */
+.hr-top-nav {
+  background: white;
+  height: 72px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E8F0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.hr-logo {
+  display: flex;
+  align-items: center;
+  margin-left: -80px;
+}
+
+.hr-brand-logo {
+  width: 220px; 
+  height: auto;
+  max-height: 72px; 
+  object-fit: contain;
+  transform: scale(1.4); 
+  transform-origin: left; 
+}
+
+.hr-nav-links {
+  display: flex;
+  gap: 32px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hr-nav-links a {
+  text-decoration: none;
+  color: #64748B;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.hr-nav-links a.active, 
+.hr-nav-links a:hover {
+  color: #2563EB;
+  border-bottom-color: #2563EB;
+}
+
+.hr-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hr-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #60A5FA;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hr-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hr-name { font-size: 14px; font-weight: 600; color: #0F172A; }
+.hr-role { font-size: 12px; color: #64748B; }
+
+/* ========================================================
+   3. Main Content Core Grid
+======================================================== */
+.hr-main-content {
+  padding: calc(30px + 72px) 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.hr-top-row {
+  display: grid;
+  grid-template-columns: 1fr 400px; 
+  gap: 30px;
+  width: 100%;
+}
+
+.hr-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hr-welcome-header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1E293B;
+  margin-bottom: 5px;
+}
+
+.hr-welcome-header p {
+  color: #64748B;
+  font-size: 15px;
+}
+
+/* ========================================================
+   4. Stats Grid
+======================================================== */
+.hr-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+}
+
+.hr-stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #F1F5F9;
+}
+
+.hr-stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.hr-stat-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 4px;
+}
+
+.hr-stat-info p {
+  color: #64748B;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ========================================================
+   5. 3D FLIP CARD & FIXED COMPACT LEGEND
+======================================================== */
+.hr-right-col {
+  display: flex;
+  width: 100%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.hr-chart-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #F1F5F9;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden; /* Prevents overflow outside the card */
+}
+.flip-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.flip-card-header h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1E293B;
+}
+
+.flip-hint {
+  font-size: 12px;
+  color: #2563EB;
+  font-weight: 500;
+  background: #EFF6FF;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* --- Container Fix --- */
+/* Container: Places Chart on Left and Legend on Right */
+.hr-pie-container {
+  display: flex;
+  flex-direction: row; /* Aligns chart and legend side-by-side */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+  gap: 12px;
+}
+
+/* Legend Container on the Right */
+.hr-legend {
+  display: flex;
+  flex-direction: column; /* Stack legend items vertically */
+  justify-content: center;
+  gap: 16px;
+  width: 45%; /* Allocates space for the right side */
+}
+
+/* Individual Legend Rows matching the reference */
+.hr-legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background: transparent; /* Clean background like reference */
+  padding: 0;
+  border: none;
+}
+
+.hr-legend-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #64748B;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.hr-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hr-legend-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0F172A;
+  padding-left: 16px; /* Indents value directly under label */
+}/* ========================================================
+   6. Table Section
+======================================================== */
+.hr-bottom-row {
+  width: 100%;
+}
+
+.hr-table-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #F1F5F9;
+}
+
+.hr-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hr-table-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1E293B;
+}
+
+.hr-view-all {
+  background: none;
+  border: none;
+  color: #3B82F6;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hr-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.hr-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.hr-table th {
+  padding: 16px;
+  background: #F8FAFC;
+  color: #64748B;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.hr-table th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+.hr-table th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+
+.hr-table td {
+  padding: 16px;
+  border-bottom: 1px solid #F1F5F9;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #1E293B;
+}
+
+.hr-table tr:last-child td {
+  border-bottom: none;
+}
+
+.hr-candidate-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #2563EB;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.hr-status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.hr-verified { background: #DCFCE7; color: #16A34A; }
+.hr-rejected { background: #FEE2E2; color: #DC2626; }
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hr-top-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hr-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

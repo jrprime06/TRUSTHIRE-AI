@@ -1,0 +1,281 @@
+.hr-profile-page {
+    min-height: 100vh !important;
+    background: #f5f7fb !important;
+    padding: 35px !important;
+}
+
+
+.hr-profile-container {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+
+.hr-profile-header {
+    margin-bottom: 25px !important;
+}
+
+
+.hr-profile-header h1 {
+    margin: 0 !important;
+    font-size: 30px !important;
+    color: #1f2937 !important;
+}
+
+
+.hr-profile-header p {
+    margin-top: 8px !important;
+    color: #6b7280 !important;
+}
+
+
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.hr-profile-card {
+    background: white !important;
+    border-radius: 14px !important;
+    padding: 30px !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06) !important;
+    margin-bottom: 25px !important;
+}
+
+
+.hr-profile-avatar {
+    width: 75px !important;
+    height: 75px !important;
+    border-radius: 50% !important;
+    background: #2563eb !important;
+    color: white !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 30px !important;
+    font-weight: 700 !important;
+
+    margin-bottom: 15px !important;
+}
+
+
+.hr-profile-info h2 {
+    margin: 0 !important;
+    color: #111827 !important;
+}
+
+
+.hr-profile-email {
+    color: #6b7280 !important;
+    margin-top: 6px !important;
+}
+
+
+/* ==========================================
+   DETAILS
+========================================== */
+
+.hr-details-grid {
+    margin-top: 30px !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 20px !important;
+}
+
+
+.hr-detail-item {
+    background: #f8fafc !important;
+    border: 1px solid #e5e7eb !important;
+
+    padding: 17px !important;
+    border-radius: 10px !important;
+}
+
+
+.hr-detail-item label {
+    display: block !important;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+
+    color: #6b7280 !important;
+
+    margin-bottom: 7px !important;
+}
+
+
+.hr-detail-item div {
+    font-size: 16px !important;
+    color: #111827 !important;
+    font-weight: 500 !important;
+}
+
+
+/* ==========================================
+   PASSWORD CARD
+========================================== */
+
+.hr-password-card {
+    background: white !important;
+    border-radius: 14px !important;
+
+    padding: 30px !important;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.06) !important;
+}
+
+
+.password-header h2 {
+    margin: 0 !important;
+    color: #111827 !important;
+}
+
+
+.password-header p {
+    color: #6b7280 !important;
+    margin-top: 7px !important;
+}
+
+
+.hr-password-form {
+    margin-top: 25px !important;
+    max-width: 600px !important;
+}
+
+
+.hr-input-group {
+    margin-bottom: 18px !important;
+}
+
+
+.hr-input-group label {
+    display: block !important;
+
+    margin-bottom: 7px !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    color: #374151 !important;
+}
+
+
+.hr-input-group input {
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    padding: 12px 14px !important;
+
+    border: 1px solid #d1d5db !important;
+    border-radius: 8px !important;
+
+    font-size: 14px !important;
+
+    outline: none !important;
+}
+
+
+.hr-input-group input:focus {
+    border-color: #2563eb !important;
+}
+
+
+.change-password-btn {
+    border: none !important;
+
+    background: #2563eb !important;
+    color: white !important;
+
+    padding: 12px 22px !important;
+
+    border-radius: 8px !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    cursor: pointer !important;
+}
+
+
+.change-password-btn:hover {
+    background: #1d4ed8 !important;
+}
+
+
+.change-password-btn:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+}
+
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.hr-success-message {
+    margin-top: 20px !important;
+
+    padding: 12px 15px !important;
+
+    background: #ecfdf5 !important;
+    color: #047857 !important;
+
+    border: 1px solid #a7f3d0 !important;
+
+    border-radius: 8px !important;
+}
+
+
+.hr-error-message {
+    margin-bottom: 20px !important;
+
+    padding: 12px 15px !important;
+
+    background: #fef2f2 !important;
+    color: #dc2626 !important;
+
+    border: 1px solid #fecaca !important;
+
+    border-radius: 8px !important;
+}
+
+
+.hr-profile-loading {
+    min-height: 100vh !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 18px !important;
+    color: #6b7280 !important;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .hr-profile-page {
+        padding: 20px !important;
+    }
+
+
+    .hr-details-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .hr-profile-card,
+    .hr-password-card {
+        padding: 20px !important;
+    }
+
+}
